@@ -1,3 +1,4 @@
+import { Console } from "console";
 import React, { useEffect, useState } from "react";
 import * as S from "./styles";
 
@@ -25,6 +26,9 @@ export default function UsersList() {
       );
       const data = await response.json();
       setUsers(data.users);
+      console.log(typeof data)
+      console.log(typeof data.users)
+
     };
 
     fetchUsers();
