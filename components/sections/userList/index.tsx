@@ -26,9 +26,6 @@ export default function UsersList() {
       );
       const data = await response.json();
       setUsers(data.users);
-      console.log(typeof data)
-      console.log(typeof data.users)
-
     };
 
     fetchUsers();
